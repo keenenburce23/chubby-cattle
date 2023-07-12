@@ -1,6 +1,5 @@
 $(window).scroll(function(){
     $("#about-img").css("opacity", 2 - $(window).scrollTop() / 1000);
-    console.log(2 - $(window).scrollTop() / 1000);
 });
 
 function openNav() {
