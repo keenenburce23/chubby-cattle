@@ -1,0 +1,584 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #DBC29E;
+}
+
+/* SCROLL BAR CUSTOMIZATION */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: black; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #DBC29E;
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #ab8c60; 
+}
+/* END OF SCROLLBAR CUSTOMIZATION */
+
+.header-container {
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-btn {
+  /* border: #DBC29E;
+  border-style: solid;
+  padding: 0px 6px;
+  border-radius: 5px; */
+}
+
+.menu-btn-container {
+  position: absolute;
+  right: 1%;
+  margin-top: 10px;
+}
+
+.nav-menu-social-logo {
+  display: flex;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+}
+
+/* The navigation menu links */
+.sidenav .nav-menu-links a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .nav-menu-small a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .nav-menu-big a:hover {
+  color: black;
+  background-color: #DBC29E;
+}
+
+.sidenav .nav-menu-small a:hover {
+  color: black;
+  background-color: #DBC29E;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.closebtn:hover {
+  background: #111 !important;
+  color: #818181 !important;
+}
+
+.nav-menu-links {
+  width: 500px;
+}
+
+.nav-menu-others {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.nav-menu-new-york {
+  border-style: solid;
+  border-top: #DBC29E;;
+  border-width: thin;
+}
+
+.nav-menu-brand, .nav-menu-cities, .nav-menu-new-york {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu-brand a, .nav-menu-cities a, .nav-menu-new-york a {
+  color: #818181;
+}
+
+.nav-menu-brand a:hover, .nav-menu-cities a:hover, .nav-menu-new-york a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu-new-york h4, .nav-menu-new-york a {
+  margin-left: 20px;
+}
+
+.nav-menu-others a {
+  margin-top: 15px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-right .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.logo-img {
+    height: 100px;
+    position: relative;
+}
+
+.brand-container {
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+.brand-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.brand-container h3 {
+    color: #DBC29E;
+}
+
+.brand-logo-main-container {
+    background: black;
+    height: 70px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo-img {
+    height: 65px;
+    opacity: 0.4;
+}
+
+.brand-logo-img:hover{
+    opacity: 1;
+    transition: ease-in 0.3s;
+    height: 68px;
+}
+
+.logo-link {
+    height: 75px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    justify-content: space-around;
+    margin: 25px 55px;
+}
+
+.about-container {
+    display: flex;
+    height: 100vh;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: black;
+}
+
+.about-context {
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-img {
+    height: 650px;
+
+}
+
+.about-context-card {
+    width: 400px;
+    margin-left: 10%;
+    height: 500px;
+}
+
+.about-button {
+    margin-left: 10%;
+}
+
+.about-btn-learn {
+    padding: 5px 15px;
+    background: black;
+    border-color: #DBC29E;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.about-btn-learn:hover {
+    background: #DBC29E;
+    color: black;
+    transition: ease 0.4s;
+}
+
+.nft-section {
+    display: flex;
+    height: 60vh;
+}
+
+.nft-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: black;
+}
+
+.nft-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-img1 {
+    height: 400px;
+    opacity: 0.4;
+    border-radius: 25px;
+}
+
+.nft-img2 {
+    height: 400px;
+    opacity: 0.4;
+    border-radius: 25px;
+}
+
+.nft-img1:hover {
+    opacity: 0.8;
+    transition: ease 0.5s;
+}
+
+.nft-img2:hover {
+    opacity: 0.8;
+    transition: ease 0.5s;
+}
+
+.nft-context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.nft-content:hover .nft-img1 {
+    opacity: 0.8;
+    transition: ease 0.5s
+}
+
+.nft-content:hover .nft-img2 {
+    opacity: 0.8;
+    transition: ease 0.5s
+}
+
+.nft-context-header {
+    font-size: 1.2rem;
+}
+
+.nft-context-strong-header {
+    font-size: 1.5rem;
+}
+
+.link-tag-button {
+    text-decoration: none;
+    color: #DBC29E;
+}
+
+.about-btn-learn:hover .link-tag-button {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.careers-section {
+    display: flex;
+    height: 65vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+.careers-container {
+    display: flex;
+}
+
+.careers-context {
+    padding: 20px 50px;
+    margin-top: 8%;
+    margin-right: 20px;
+}
+
+
+.carousel-body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+/* CAROUSEL */
+.container {
+    max-width: 1130px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-container {
+    margin: 0 38px;
+    overflow: hidden;
+    display: flex;
+    height: 500px;
+  }
+  .card {
+    background: #DBC29E !important;
+    border-radius: 8px;
+    width: 330px !important;
+  }
+  .card a {
+    color: #4d4d4d;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .card a:hover {
+    text-decoration: none;
+    color: #242424;
+  }
+  .card .image-box {
+    height: 450px;
+  }
+  .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+    background: #DBC29E;
+  }
+  .card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .card-wrapper {
+    display: flex;
+  }
+  .profile-details .name {
+    color: #4d4d4d;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .profile-details .job {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+  .swiper-navBtn {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background: #DBC29E;
+    border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 18px;
+  }
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
+  @media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  }
+
+
+/* NEWS SECTION */
+.news-section {
+  height: 50vh;
+  display: flex;
+  background: black;
+}
+
+.news-container {
+  width: 100%;
+}
+
+.news-container h2 {
+  text-align: center;
+}
+
+.news-content {
+  height: 85%;
+}
+
+.news-content-card {
+  width: 350px;
+}
+
+.news-content-card a:hover {
+  text-decoration: none;
+}
+
+.news-content-card-img img {
+  width: 350px;
+}
+
+.news-content-card span {
+  font-size: 1.1rem;
+}
+
+.footer-section {
+  border: 2px;
+  border-top-color: #DBC29E;
+  border-top-style: solid;
+  background: black;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+.footer-section .col {
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.col-img {
+  height: 65px;
+}
+
+.col-links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-links {
+  color: #DBC29E;
+  font-size: 15px;
+}
+
+.col-links:hover {
+  color: #ab8c60;
+  text-decoration: none;
+}
+
+#email {
+  background: black;
+  border-radius: 10px;
+  border-color: #DBC29E;
+  border-style: solid;
+  padding: 5px;
+  margin-top: 11px;
+}
+
+#email:hover {
+  background: black;
+  border-color: #ab8c60;
+}
+
+.col-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: start !important;
+}
+
+.col-button {
+  margin-top: 5px;
+  padding: 3px 12px;
+  border-radius: 5px;
+  background: #DBC29E;
+  color: black;
+  border-color: black;
+  border-style: solid;
+}
+
+.col-button:hover {
+  background: black;
+  color: #DBC29E;
+  border-color: #DBC29E;
+  border-style: solid;
+  border-width: thin;
+  transition: ease-in 0.5s;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
+
+.footer-logo-section {
+  display: flex;
+}
+
+.footer-logo-icons {
+  margin: 0px 10px 10px 10px;
+}
