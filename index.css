@@ -69,7 +69,7 @@ background: #ab8c60;
 
 /* The navigation menu links */
 .sidenav .nav-menu-links a {
-  padding: 8px 8px 8px 32px;
+  padding: 0px 8px 8px 32px;
   text-decoration: none;
   font-size: 30px;
   color: #818181;
@@ -78,7 +78,7 @@ background: #ab8c60;
 }
 
 .sidenav .nav-menu-small a {
-  padding: 8px 8px 8px 32px;
+  padding: 0px 8px 8px 32px;
   text-decoration: none;
   font-size: 15px;
   color: #818181;
@@ -120,11 +120,11 @@ background: #ab8c60;
   margin-top: 45px;
 }
 
-.nav-menu-new-york {
+/* .nav-menu-new-york {
   border-style: solid;
   border-top: #DBC29E;;
   border-width: thin;
-}
+} */
 
 .nav-menu-brand, .nav-menu-cities, .nav-menu-new-york {
   display: flex;
@@ -140,9 +140,9 @@ background: #ab8c60;
   text-decoration: none;
 }
 
-.nav-menu-new-york h4, .nav-menu-new-york a {
+/* .nav-menu-new-york h4, .nav-menu-new-york a {
   margin-left: 20px;
-}
+} */
 
 .nav-menu-others a {
   margin-top: 15px;
